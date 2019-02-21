@@ -1,0 +1,14 @@
+url,app
+https://192.168.100.134:8000,WSDC_Splunk
+https://192.168.100.135,WSDC_OCUM
+https://192.168.100.146,OCUM_72_WSDC
+https://192.168.100.140,WSDC_MTE_OCUM
+https://192.168.100.136:8443,WSDC_Syslog
+https://192.168.100.198,esxau2106sp0470
+https://192.168.100.199,esxau2106sp0471
+https://192.168.100.200,esxau2106sp0472
+https://192.168.100.201,esxau2106sp0473
+https://192.168.100.202,esxau2106sp0474
+https://192.168.100.203,esxau2106sp0475
+https://192.168.100.205,esxau2106sp0476
+https://192.168.100.204,esxau2106sp0477

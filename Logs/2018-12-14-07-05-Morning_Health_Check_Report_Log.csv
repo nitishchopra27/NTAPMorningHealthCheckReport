@@ -1,0 +1,1001 @@
+Severity,Message
+Information,=====================================
+Information, NetApp Environment Report 
+Success,Contents of E:\Scripts\morningReport\inputs.csv are imported successfully
+Information,***************************************************************************************************
+Information,Executing Health Check for au1111npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1111npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=129792809"
+Information,Executing Health Check for au1111npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129793226 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129793226 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa001 is Healthy
+Success,au1111npsa001 is Healthy
+Information,Checking Uptime of au1111npsa001
+Success,au1111npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa001
+Success,au1111npsa001 is HA
+Information,Updating Capacity Property of au1111npsa001
+Error,au1111npsa001 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=210 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa001 has an average latency of : 0.11 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa001
+Information,Executing Health Check for au1111npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129793168 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129793168 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa002 is Healthy
+Success,au1111npsa002 is Healthy
+Information,Checking Uptime of au1111npsa002
+Success,au1111npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa002
+Success,au1111npsa002 is HA
+Information,Updating Capacity Property of au1111npsa002
+Error,au1111npsa002 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=141 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa002 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa002
+Information,Executing Health Check for au1111npsa005
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa005"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129792995 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129792995 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa005 is Healthy
+Success,au1111npsa005 is Healthy
+Information,Checking Uptime of au1111npsa005
+Success,au1111npsa005 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa005
+Success,au1111npsa005 is HA
+Information,Updating Capacity Property of au1111npsa005
+Error,au1111npsa005 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa005
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa005"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=10451 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa005 has an average latency of : 0.24 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa005
+Information,Executing Health Check for au1111npsa006
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa006"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129793082 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129793082 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa006 is Healthy
+Success,au1111npsa006 is Healthy
+Information,Checking Uptime of au1111npsa006
+Success,au1111npsa006 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa006
+Success,au1111npsa006 is HA
+Information,Updating Capacity Property of au1111npsa006
+Error,au1111npsa006 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa006
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa006"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=10472 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa006 has an average latency of : 0.13 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa006
+Information,Executing Health Check for au1111npsa007
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa007"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129792820 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129792820 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa007 is Healthy
+Success,au1111npsa007 is Healthy
+Information,Checking Uptime of au1111npsa007
+Success,au1111npsa007 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa007
+Success,au1111npsa007 is HA
+Information,Updating Capacity Property of au1111npsa007
+Error,au1111npsa007 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa007
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa007"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=28001 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa007 has an average latency of : 0.18 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa007
+Information,Executing Health Check for au1111npsa008
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa008"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129792908 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129792908 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa008 is Healthy
+Success,au1111npsa008 is Healthy
+Information,Checking Uptime of au1111npsa008
+Success,au1111npsa008 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa008
+Success,au1111npsa008 is HA
+Information,Updating Capacity Property of au1111npsa008
+Error,au1111npsa008 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa008
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa008"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=28002 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa008 has an average latency of : 0.12 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa008
+Success,Successfully updated HTML table for au1111npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au1111npsc002
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1111npsc002"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=26001"
+Information,Executing Health Check for au1111NPSA020
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111NPSA020"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26009 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26009 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111NPSA020 is Healthy
+Success,au1111NPSA020 is Healthy
+Information,Checking Uptime of au1111NPSA020
+Success,au1111NPSA020 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111NPSA020
+Success,au1111NPSA020 is HA
+Information,Updating Capacity Property of au1111NPSA020
+Success,All aggregates on au1111NPSA020 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111NPSA020
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111NPSA020"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=7428 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111NPSA020 has an average latency of : 4.65 : for last 24 hours
+Information,Completed Performance Checks on au1111NPSA020
+Information,Executing Health Check for au1111NPSA021
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111NPSA021"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26041 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26041 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111NPSA021 is Healthy
+Success,au1111NPSA021 is Healthy
+Information,Checking Uptime of au1111NPSA021
+Success,au1111NPSA021 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111NPSA021
+Success,au1111NPSA021 is HA
+Information,Updating Capacity Property of au1111NPSA021
+Success,All aggregates on au1111NPSA021 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111NPSA021
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111NPSA021"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=7479 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111NPSA021 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au1111NPSA021
+Success,Successfully updated HTML table for au1111npsc002
+Information,***************************************************************************************************
+Information,Executing Health Check for au1111npsc003
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1111npsc003"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=1"
+Information,Executing Health Check for au1111npsa011
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa011"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=136 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=136 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa011 is Healthy
+Success,au1111npsa011 is Healthy
+Information,Checking Uptime of au1111npsa011
+Success,au1111npsa011 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa011
+Success,au1111npsa011 is HA
+Information,Updating Capacity Property of au1111npsa011
+Error,au1111npsa011 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa011
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa011"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=136 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa011 has an average latency of : 0.06 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa011
+Information,Executing Health Check for au1111npsa012
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1111npsa012"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=16 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=16 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1111npsa012 is Healthy
+Success,au1111npsa012 is Healthy
+Information,Checking Uptime of au1111npsa012
+Success,au1111npsa012 has an uptime of more than 24 hours
+Information,Checking HA Status of au1111npsa012
+Success,au1111npsa012 is HA
+Information,Updating Capacity Property of au1111npsa012
+Success,All aggregates on au1111npsa012 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1111npsa012
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1111npsa012"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=16 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1111npsa012 has an average latency of : 0.00 : for last 24 hours
+Information,Completed Performance Checks on au1111npsa012
+Success,Successfully updated HTML table for au1111npsc003
+Information,***************************************************************************************************
+Information,Executing Health Check for au2222npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au2222npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=1"
+Information,Executing Health Check for au2222npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=169 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=169 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa001 is Healthy
+Success,au2222npsa001 is Healthy
+Information,Checking Uptime of au2222npsa001
+Success,au2222npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa001
+Success,au2222npsa001 is HA
+Information,Updating Capacity Property of au2222npsa001
+Success,All aggregates on au2222npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=1239 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222npsa001 has an average latency of : 0.03 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa001
+Information,Executing Health Check for au2222npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=114 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=114 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa002 is Healthy
+Success,au2222npsa002 is Healthy
+Information,Checking Uptime of au2222npsa002
+Success,au2222npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa002
+Success,au2222npsa002 is HA
+Information,Updating Capacity Property of au2222npsa002
+Error,au2222npsa002 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=1161 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222npsa002 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa002
+Information,Executing Health Check for au2222npsa005
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa005"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=224 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=224 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa005 is Healthy
+Success,au2222npsa005 is Healthy
+Information,Checking Uptime of au2222npsa005
+Success,au2222npsa005 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa005
+Success,au2222npsa005 is HA
+Information,Updating Capacity Property of au2222npsa005
+Error,au2222npsa005 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa005
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa005"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=9443 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222npsa005 has an average latency of : 0.19 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa005
+Information,Executing Health Check for au2222npsa006
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa006"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=290 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=290 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa006 is Healthy
+Success,au2222npsa006 is Healthy
+Information,Checking Uptime of au2222npsa006
+Success,au2222npsa006 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa006
+Success,au2222npsa006 is HA
+Information,Updating Capacity Property of au2222npsa006
+Error,au2222npsa006 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa006
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa006"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=10346 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222npsa006 has an average latency of : 0.25 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa006
+Information,Executing Health Check for au2222npsa007
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa007"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87074 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87074 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa007 is Healthy
+Success,au2222npsa007 is Healthy
+Information,Checking Uptime of au2222npsa007
+Success,au2222npsa007 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa007
+Success,au2222npsa007 is HA
+Information,Updating Capacity Property of au2222npsa007
+Error,au2222npsa007 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa007
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa007"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=29083 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222npsa007 has an average latency of : 0.12 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa007
+Information,Executing Health Check for au2222npsa008
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa008"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87015 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87015 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa008 is Healthy
+Success,au2222npsa008 is Healthy
+Information,Checking Uptime of au2222npsa008
+Success,au2222npsa008 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa008
+Success,au2222npsa008 is HA
+Information,Updating Capacity Property of au2222npsa008
+Error,au2222npsa008 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa008
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa008"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=29009 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222npsa008 has an average latency of : 0.15 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa008
+Success,Successfully updated HTML table for au2222npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au2222npsc002
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au2222npsc002"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=26662"
+Information,Executing Health Check for au2222NPSA020
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222NPSA020"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26671 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26671 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222NPSA020 is Healthy
+Success,au2222NPSA020 is Healthy
+Information,Checking Uptime of au2222NPSA020
+Success,au2222NPSA020 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222NPSA020
+Success,au2222NPSA020 is HA
+Information,Updating Capacity Property of au2222NPSA020
+Success,All aggregates on au2222NPSA020 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222NPSA020
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222NPSA020"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=8203 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222NPSA020 has an average latency of : 3.48 : for last 24 hours
+Information,Completed Performance Checks on au2222NPSA020
+Information,Executing Health Check for au2222NPSA021
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222NPSA021"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26703 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=26703 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222NPSA021 is Healthy
+Success,au2222NPSA021 is Healthy
+Information,Checking Uptime of au2222NPSA021
+Success,au2222NPSA021 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222NPSA021
+Success,au2222NPSA021 is HA
+Information,Updating Capacity Property of au2222NPSA021
+Success,All aggregates on au2222NPSA021 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222NPSA021
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222NPSA021"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=8254 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au2222NPSA021 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au2222NPSA021
+Success,Successfully updated HTML table for au2222npsc002
+Information,***************************************************************************************************
+Information,Executing Health Check for au2222npsc003
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au2222npsc003"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=2889"
+Information,Executing Health Check for au2222npsa011
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa011"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=3024 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=3024 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa011 is Healthy
+Success,au2222npsa011 is Healthy
+Information,Checking Uptime of au2222npsa011
+Success,au2222npsa011 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa011
+Success,au2222npsa011 is HA
+Information,Updating Capacity Property of au2222npsa011
+Error,au2222npsa011 has aggregates where used capcity is > 75%
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa011
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa011"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=3024 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au2222npsa011 has an average latency of : 0.01 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa011
+Information,Executing Health Check for au2222npsa012
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au2222npsa012"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=2904 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=2904 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au2222npsa012 is Healthy
+Success,au2222npsa012 is Healthy
+Information,Checking Uptime of au2222npsa012
+Success,au2222npsa012 has an uptime of more than 24 hours
+Information,Checking HA Status of au2222npsa012
+Success,au2222npsa012 is HA
+Information,Updating Capacity Property of au2222npsa012
+Success,All aggregates on au2222npsa012 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au2222npsa012
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au2222npsa012"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=2904 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au2222npsa012 has an average latency of : 0.05 : for last 24 hours
+Information,Completed Performance Checks on au2222npsa012
+Success,Successfully updated HTML table for au2222npsc003
+Information,***************************************************************************************************
+Information,Executing Health Check for au3333npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au3333npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=57105242"
+Information,Executing Health Check for au3333npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au3333npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=57105276 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=57105276 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au3333npsa001 is Healthy
+Success,au3333npsa001 is Healthy
+Information,Checking Uptime of au3333npsa001
+Success,au3333npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au3333npsa001
+Success,au3333npsa001 is HA
+Information,Updating Capacity Property of au3333npsa001
+Success,All aggregates on au3333npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au3333npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au3333npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=44300 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au3333npsa001 has an average latency of : 0.02 : for last 24 hours
+Information,Completed Performance Checks on au3333npsa001
+Information,Executing Health Check for au3333npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au3333npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=57105243 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=57105243 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au3333npsa002 is Healthy
+Success,au3333npsa002 is Healthy
+Information,Checking Uptime of au3333npsa002
+Success,au3333npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au3333npsa002
+Success,au3333npsa002 is HA
+Information,Updating Capacity Property of au3333npsa002
+Success,All aggregates on au3333npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au3333npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au3333npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=44248 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au3333npsa002 has an average latency of : 0.03 : for last 24 hours
+Information,Completed Performance Checks on au3333npsa002
+Success,Successfully updated HTML table for au3333npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au4444npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au4444npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=129160498"
+Information,Executing Health Check for au4444npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au4444npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129160529 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129160529 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au4444npsa001 is Healthy
+Success,au4444npsa001 is Healthy
+Information,Checking Uptime of au4444npsa001
+Success,au4444npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au4444npsa001
+Success,au4444npsa001 is HA
+Information,Updating Capacity Property of au4444npsa001
+Success,All aggregates on au4444npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au4444npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au4444npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=48986 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au4444npsa001 has an average latency of : 0.01 : for last 24 hours
+Information,Completed Performance Checks on au4444npsa001
+Information,Executing Health Check for au4444npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au4444npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129160499 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129160499 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au4444npsa002 is Healthy
+Success,au4444npsa002 is Healthy
+Information,Checking Uptime of au4444npsa002
+Success,au4444npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au4444npsa002
+Success,au4444npsa002 is HA
+Information,Updating Capacity Property of au4444npsa002
+Success,All aggregates on au4444npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au4444npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au4444npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=48937 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 144 entries in perfavgLatency Array
+Information,au4444npsa002 has an average latency of : 0.06 : for last 24 hours
+Information,Completed Performance Checks on au4444npsa002
+Success,Successfully updated HTML table for au4444npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au5555npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au5555npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=130146719"
+Information,Executing Health Check for au5555npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au5555npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146757 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146757 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au5555npsa001 is Healthy
+Success,au5555npsa001 is Healthy
+Information,Checking Uptime of au5555npsa001
+Success,au5555npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au5555npsa001
+Success,au5555npsa001 is HA
+Information,Updating Capacity Property of au5555npsa001
+Success,All aggregates on au5555npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au5555npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au5555npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=50853 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au5555npsa001 has an average latency of : 0.01 : for last 24 hours
+Information,Completed Performance Checks on au5555npsa001
+Information,Executing Health Check for au5555npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au5555npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146726 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146726 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au5555npsa002 is Healthy
+Success,au5555npsa002 is Healthy
+Information,Checking Uptime of au5555npsa002
+Success,au5555npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au5555npsa002
+Success,au5555npsa002 is HA
+Information,Updating Capacity Property of au5555npsa002
+Success,All aggregates on au5555npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au5555npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au5555npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=50800 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au5555npsa002 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au5555npsa002
+Success,Successfully updated HTML table for au5555npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au6666npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au6666npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=130146190"
+Information,Executing Health Check for au6666npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au6666npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146226 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146226 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au6666npsa001 is Healthy
+Success,au6666npsa001 is Healthy
+Information,Checking Uptime of au6666npsa001
+Success,au6666npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au6666npsa001
+Success,au6666npsa001 is HA
+Information,Updating Capacity Property of au6666npsa001
+Success,All aggregates on au6666npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au6666npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au6666npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=53572 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 289 entries in perfavgLatency Array
+Information,au6666npsa001 has an average latency of : 0.01 : for last 24 hours
+Information,Completed Performance Checks on au6666npsa001
+Information,Executing Health Check for au6666npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au6666npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146196 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=130146196 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au6666npsa002 is Healthy
+Success,au6666npsa002 is Healthy
+Information,Checking Uptime of au6666npsa002
+Success,au6666npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au6666npsa002
+Success,au6666npsa002 is HA
+Information,Updating Capacity Property of au6666npsa002
+Success,All aggregates on au6666npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au6666npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au6666npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=53520 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 289 entries in perfavgLatency Array
+Information,au6666npsa002 has an average latency of : 0.05 : for last 24 hours
+Information,Completed Performance Checks on au6666npsa002
+Success,Successfully updated HTML table for au6666npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au7777npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au7777npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=129138479"
+Information,Executing Health Check for au7777npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au7777npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129138480 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129138480 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au7777npsa001 is Healthy
+Success,au7777npsa001 is Healthy
+Information,Checking Uptime of au7777npsa001
+Success,au7777npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au7777npsa001
+Success,au7777npsa001 is HA
+Information,Updating Capacity Property of au7777npsa001
+Success,All aggregates on au7777npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au7777npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au7777npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=46285 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au7777npsa001 has an average latency of : 0.03 : for last 24 hours
+Information,Completed Performance Checks on au7777npsa001
+Information,Executing Health Check for au7777npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au7777npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129138510 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=129138510 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au7777npsa002 is Healthy
+Success,au7777npsa002 is Healthy
+Information,Checking Uptime of au7777npsa002
+Success,au7777npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au7777npsa002
+Success,au7777npsa002 is HA
+Information,Updating Capacity Property of au7777npsa002
+Success,All aggregates on au7777npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au7777npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au7777npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=46334 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au7777npsa002 has an average latency of : 0.03 : for last 24 hours
+Information,Completed Performance Checks on au7777npsa002
+Success,Successfully updated HTML table for au7777npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au8888npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au8888npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=88407"
+Information,Executing Health Check for au8888npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au8888npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=88414 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=88414 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au8888npsa001 is Healthy
+Success,au8888npsa001 is Healthy
+Information,Checking Uptime of au8888npsa001
+Success,au8888npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au8888npsa001
+Success,au8888npsa001 is HA
+Information,Updating Capacity Property of au8888npsa001
+Success,All aggregates on au8888npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au8888npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au8888npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=84859 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au8888npsa001 has an average latency of : 0.05 : for last 24 hours
+Information,Completed Performance Checks on au8888npsa001
+Information,Executing Health Check for au8888npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au8888npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=88465 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=88465 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au8888npsa002 is Healthy
+Success,au8888npsa002 is Healthy
+Information,Checking Uptime of au8888npsa002
+Success,au8888npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au8888npsa002
+Success,au8888npsa002 is HA
+Information,Updating Capacity Property of au8888npsa002
+Success,All aggregates on au8888npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au8888npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au8888npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=84910 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au8888npsa002 has an average latency of : 0.67 : for last 24 hours
+Information,Completed Performance Checks on au8888npsa002
+Success,Successfully updated HTML table for au8888npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au9999npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au9999npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=90280"
+Information,Executing Health Check for au9999npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au9999npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=90338 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=90338 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au9999npsa001 is Healthy
+Success,au9999npsa001 is Healthy
+Information,Checking Uptime of au9999npsa001
+Success,au9999npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au9999npsa001
+Success,au9999npsa001 is HA
+Information,Updating Capacity Property of au9999npsa001
+Success,All aggregates on au9999npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au9999npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au9999npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=89289 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au9999npsa001 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au9999npsa001
+Information,Executing Health Check for au9999npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au9999npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=90287 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=90287 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au9999npsa002 is Healthy
+Success,au9999npsa002 is Healthy
+Information,Checking Uptime of au9999npsa002
+Success,au9999npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au9999npsa002
+Success,au9999npsa002 is HA
+Information,Updating Capacity Property of au9999npsa002
+Success,All aggregates on au9999npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au9999npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au9999npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=89238 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au9999npsa002 has an average latency of : 0.68 : for last 24 hours
+Information,Completed Performance Checks on au9999npsa002
+Success,Successfully updated HTML table for au9999npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au1212npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1212npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=95177"
+Information,Executing Health Check for au1212npsa003
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1212npsa003"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=95237 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=95237 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1212npsa003 is Healthy
+Success,au1212npsa003 is Healthy
+Information,Checking Uptime of au1212npsa003
+Success,au1212npsa003 has an uptime of more than 24 hours
+Information,Checking HA Status of au1212npsa003
+Success,au1212npsa003 is HA
+Information,Updating Capacity Property of au1212npsa003
+Success,All aggregates on au1212npsa003 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1212npsa003
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1212npsa003"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=92352 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1212npsa003 has an average latency of : 0.60 : for last 24 hours
+Information,Completed Performance Checks on au1212npsa003
+Information,Executing Health Check for au1212npsa004
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1212npsa004"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=95184 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=95184 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1212npsa004 is Healthy
+Success,au1212npsa004 is Healthy
+Information,Checking Uptime of au1212npsa004
+Success,au1212npsa004 has an uptime of more than 24 hours
+Information,Checking HA Status of au1212npsa004
+Success,au1212npsa004 is HA
+Information,Updating Capacity Property of au1212npsa004
+Success,All aggregates on au1212npsa004 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1212npsa004
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1212npsa004"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=92299 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1212npsa004 has an average latency of : 0.06 : for last 24 hours
+Information,Completed Performance Checks on au1212npsa004
+Success,Successfully updated HTML table for au1212npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au1313npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1313npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=93338"
+Information,Executing Health Check for au1313npsa003
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1313npsa003"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=93345 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=93345 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1313npsa003 is Healthy
+Success,au1313npsa003 is Healthy
+Information,Checking Uptime of au1313npsa003
+Success,au1313npsa003 has an uptime of more than 24 hours
+Information,Checking HA Status of au1313npsa003
+Success,au1313npsa003 is HA
+Information,Updating Capacity Property of au1313npsa003
+Success,All aggregates on au1313npsa003 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1313npsa003
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1313npsa003"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=93511 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1313npsa003 has an average latency of : 0.72 : for last 24 hours
+Information,Completed Performance Checks on au1313npsa003
+Information,Executing Health Check for au1313npsa004
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1313npsa004"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=93398 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=93398 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1313npsa004 is Healthy
+Success,au1313npsa004 is Healthy
+Information,Checking Uptime of au1313npsa004
+Success,au1313npsa004 has an uptime of more than 24 hours
+Information,Checking HA Status of au1313npsa004
+Success,au1313npsa004 is HA
+Information,Updating Capacity Property of au1313npsa004
+Success,All aggregates on au1313npsa004 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1313npsa004
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1313npsa004"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=93564 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1313npsa004 has an average latency of : 0 : for last 24 hours
+Information,Completed Performance Checks on au1313npsa004
+Success,Successfully updated HTML table for au1313npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au1414npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1414npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=85853"
+Information,Executing Health Check for au1414npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1414npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=85913 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=85913 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1414npsa001 is Healthy
+Success,au1414npsa001 is Healthy
+Information,Checking Uptime of au1414npsa001
+Success,au1414npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au1414npsa001
+Success,au1414npsa001 is HA
+Information,Updating Capacity Property of au1414npsa001
+Success,All aggregates on au1414npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1414npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1414npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=85913 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1414npsa001 has an average latency of : 0.33 : for last 24 hours
+Information,Completed Performance Checks on au1414npsa001
+Information,Executing Health Check for au1414npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1414npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=85860 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=85860 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1414npsa002 is Healthy
+Success,au1414npsa002 is Healthy
+Information,Checking Uptime of au1414npsa002
+Success,au1414npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au1414npsa002
+Success,au1414npsa002 is HA
+Information,Updating Capacity Property of au1414npsa002
+Success,All aggregates on au1414npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1414npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1414npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=85860 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1414npsa002 has an average latency of : 0.15 : for last 24 hours
+Information,Completed Performance Checks on au1414npsa002
+Success,Successfully updated HTML table for au1414npsc001
+Information,***************************************************************************************************
+Information,Executing Health Check for au1515npsc001
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.cluster WHERE ocum_report.cluster.name=au1515npsc001"
+Success,"Successfully Executed SQL Query: SELECT id,name FROM ocum_report.clusternode WHERE ocum_report.clusternode.clusterId=87058"
+Information,Executing Health Check for au1515npsa001
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1515npsa001"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87118 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87118 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1515npsa001 is Healthy
+Success,au1515npsa001 is Healthy
+Information,Checking Uptime of au1515npsa001
+Success,au1515npsa001 has an uptime of more than 24 hours
+Information,Checking HA Status of au1515npsa001
+Success,au1515npsa001 is HA
+Information,Updating Capacity Property of au1515npsa001
+Success,All aggregates on au1515npsa001 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1515npsa001
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1515npsa001"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=87118 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1515npsa001 has an average latency of : 1.27 : for last 24 hours
+Information,Completed Performance Checks on au1515npsa001
+Information,Executing Health Check for au1515npsa002
+Success,"Successfully Executed SQL Query: SELECT name,uptime,isNodeHealthy,currentMode,giveBackState FROM ocum_report.clusternode WHERE ocum_report.clusternode.name=au1515npsa002"
+Success,Successfully Executed SQL Query: SELECT name FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87065 AND ocum_report.aggregate.state NOT LIKE '%online%'
+Success,"Successfully Executed SQL Query: SELECT name,sizeUsedPercent FROM ocum_report.aggregate WHERE ocum_report.aggregate.nodeId=87065 AND ocum_report.aggregate.hasLocalRoot=0"
+Information,Checking if any aggregates are above 75% used
+Information,Starting Health Checks
+Information,Checking if au1515npsa002 is Healthy
+Success,au1515npsa002 is Healthy
+Information,Checking Uptime of au1515npsa002
+Success,au1515npsa002 has an uptime of more than 24 hours
+Information,Checking HA Status of au1515npsa002
+Success,au1515npsa002 is HA
+Information,Updating Capacity Property of au1515npsa002
+Success,All aggregates on au1515npsa002 are below 75% used capacity
+Information,Completed Health Checks
+Information,Starting Performance Checks on au1515npsa002
+Success,"Successfully Executed SQL Query: SELECT objid,name FROM node WHERE name LIKE au1515npsa002"
+Success,"Successfully Executed SQL Query: SELECT round((avgLatency/1000),2) AS avgLatency FROM sample_node WHERE objid=87065 AND (Date_Format(FROM_UNIXTIME(time/1000),'%Y:%m:%d:%H') between '2018:12:13:07' and '2018:12:14:07')"
+Information,There are 288 entries in perfavgLatency Array
+Information,au1515npsa002 has an average latency of : 0.29 : for last 24 hours
+Information,Completed Performance Checks on au1515npsa002
+Success,Successfully updated HTML table for au1515npsc001
+Information,***************************************************************************************************
+Success,Mgmt Server information file found
+Success,Contents of E:\Scripts\morningReport\cfs_toolcheck.csv are imported successfully
+Success,WSDC_Splunk +  is OK!
+Success,WSDC_OCUM +  is OK!
+Error,"Failed enumerating status for ""OCUM_72_WSDC"". Error Exception calling ""GetResponse"" with ""0"" argument(s): ""The request was aborted: Could not create SSL/TLS secure channel."""
+Error,OCUM_72_WSDC +  may be down please check!
+Error,"Failed enumerating status for ""WSDC_MTE_OCUM"". Error Exception calling ""GetResponse"" with ""0"" argument(s): ""The underlying connection was closed: An unexpected error occurred on a send."""
+Error,WSDC_MTE_OCUM +  may be down please check!
+Success,WSDC_Syslog +  is OK!
+Success,esxau2222sp0470 +  is OK!
+Success,esxau2222sp0471 +  is OK!
+Success,esxau2222sp0472 +  is OK!
+Success,esxau2222sp0473 +  is OK!
+Success,esxau2222sp0474 +  is OK!
+Success,esxau2222sp0475 +  is OK!
+Success,esxau2222sp0476 +  is OK!
+Success,esxau2222sp0477 +  is OK!
+Success,Successfully updated HTML table for Mgmt Applicatons
+Information,***************************************************************************************************
+Success,RCC Mgmt Server information file found
+Success,Contents of \\au1111np0055.infau.wbcau.westpac.com.au\DFM_Reports\cfs_toolcheck_rcc\2018_12_14_07_00_cfs_toolcheck_outfile.csv are imported successfully
+Success,Successfully updated HTML table for RCC Mgmt Applicatons
+Information,***************************************************************************************************
+Information,Creating Table for Open Changes
+Success,Successfully updated HTML table for Open Changes
+Information,***************************************************************************************************
+Information,Creating Table for DR Config
+Success,Successfully updated HTML table for DR Configs
+Information,***************************************************************************************************
